@@ -1,11 +1,11 @@
 50.times do
   school = School.create({
-      name:          Faker::University.name })
+    name:          Faker::University.name })
 
   teacher = Teacher.create({
-      first_name:    Faker::Name.first_name,
-      last_name:     Faker::Name.last_name,
-      school_id:     school.id })
+    first_name:    Faker::Name.first_name,
+    last_name:     Faker::Name.last_name,
+    school_id:     school.id })
 
   course = Course.create({
     name:            Faker::Commerce.department,
