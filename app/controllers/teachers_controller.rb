@@ -7,8 +7,7 @@ class TeachersController < ApplicationController
   def show
     if Teacher.exists?(params[:id])
       teacher = Teacher.find(params[:id])
-      students = Student.all
-      render template: 'teachers/show.html.erb', locals: { teacher: teacher, students: student }
+      render template: 'teachers/show.html.erb', locals: { teacher: teacher }
     end
   end
 
