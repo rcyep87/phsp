@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   resources :students
   resources :courses
 
-  get  '/teachers/:id/student', to: 'teachers#show'
-
-  root 'teachers#index'
+  root 'homepage#index'
 
 end
