@@ -1,0 +1,7 @@
+<h1>List of Schools</h1>
+
+<% school_list.each do |s| %>
+  <ul>
+    <li><%= link_to(s.name, s) %></li>
+  </ul>
+<% end %>
