@@ -1,5 +1,13 @@
 <h1><%= "#{school.name}'s Home Page"%></h1>
 
+<p><strong>School Stats:</strong>
+  <ul>
+    <li><%= "Number of Students: #{school.students.length}" %></li>
+    <li><%= "Number of Teachers: #{school.teachers.length}" %></li>
+    <li><%= "Number of Courses:  #{school.courses.length}" %></li>
+  </ul>
+</p>
+
 <p><strong> Teachers:</strong>
 <ul>
 <% school.teachers.each do |t| %>
