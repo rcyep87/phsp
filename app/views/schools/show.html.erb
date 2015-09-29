@@ -1,0 +1,9 @@
+<h1><%= "#{school.name}'s Home Page"%></h1>
+
+<p> Teachers:
+<ul>
+<% school.teachers.each do |t| %>
+  <li><%= "#{t.first_name} #{t.last_name}"%></li>
+<% end %>
+</ul>
+</p>
