@@ -1,7 +1,7 @@
 <h1>List of Schools</h1>
 
-<ul>
-<% school_list.each do |s| %>
-  <li><%= link_to(s.name, s) %></li>
-<% end %>
+<ul class="list-group">
+  <% school_list.each do |s| %>
+    <li class="list-group-item"><%= link_to(s.name, s) %></li>
+  <% end %>
 </ul>

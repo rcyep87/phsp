@@ -1,17 +1,17 @@
 <h1><%= "#{teacher.first_name}'s Page"%></h1>
 
-<p> <strong>Course Name:</strong>
-  <ul>
+<ul class="list-group">
+  <p> <strong>Course Name:</strong>
     <% teacher.courses.each do |c| %>
-      <li><%= c.name %></li>
-  </ul>
-  <% end %>
-</p>
-
-<p> <strong>Students:</strong>
-<ul>
-<% teacher.students.each do |s| %>
-  <li><%= "#{s.first_name} #{s.last_name}"%></li>
-<% end %>
+      <li class="list-group-item"><%= c.name %></li>
+    <% end %>
+  </p>
 </ul>
-</p>
+
+<ul class="list-group">
+  <p> <strong>Students:</strong>
+    <% teacher.students.each do |s| %>
+      <li class="list-group-item"><%= "#{s.first_name} #{s.last_name}"%></li>
+    <% end %>
+  </p>
+</ul>
