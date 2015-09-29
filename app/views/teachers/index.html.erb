@@ -1,7 +1,7 @@
 <h1>Teacher Directory</h1>
 
-<ul>
-<% teachers.each do |t| %>
-  <li><%= link_to("#{t.first_name} #{t.last_name}", t) %></li>
-<% end %>
+<ul class="list-group">
+  <% teachers.each do |t| %>
+    <li class="list-group-item"><%= link_to("#{t.first_name} #{t.last_name}", t) %></li>
+  <% end %>
 </ul>
