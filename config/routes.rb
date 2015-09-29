@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :teachers do
-    resources :students
+    resources :students, only: [:index]
   end
 
 root 'teachers#index'
