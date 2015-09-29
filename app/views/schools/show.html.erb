@@ -15,3 +15,11 @@
 <% end %>
 </ul>
 </p>
+
+<p><strong> Students:</strong>
+<ul>
+<% school.students.each do |t| %>
+  <li><%= "#{t.first_name} #{t.last_name}"%></li>
+<% end %>
+</ul>
+</p>
