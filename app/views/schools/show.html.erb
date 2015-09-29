@@ -1,25 +1,25 @@
 <h1><%= "#{school.name}'s Home Page"%></h1>
 
 <p><strong>School Stats:</strong>
-  <ul>
-    <li><%= "Number of Students: #{school.students.length}" %></li>
-    <li><%= "Number of Teachers: #{school.teachers.length}" %></li>
-    <li><%= "Number of Courses:  #{school.courses.length}" %></li>
+  <ul class="list-group">
+    <li class="list-group-item"><%= "Number of Students: #{school.students.length}" %></li>
+    <li class="list-group-item"><%= "Number of Teachers: #{school.teachers.length}" %></li>
+    <li class="list-group-item"><%= "Number of Courses:  #{school.courses.length}" %></li>
   </ul>
 </p>
 
 <p><strong> Teachers:</strong>
-<ul>
-<% school.teachers.each do |t| %>
-  <li><%= "#{t.first_name} #{t.last_name}"%></li>
-<% end %>
-</ul>
+  <ul class="list-group">
+    <% school.teachers.each do |t| %>
+      <li class="list-group-item"><%= "#{t.first_name} #{t.last_name}"%></li>
+    <% end %>
+  </ul>
 </p>
 
 <p><strong> Students:</strong>
-<ul>
-<% school.students.each do |t| %>
-  <li><%= "#{t.first_name} #{t.last_name}"%></li>
-<% end %>
-</ul>
+  <ul class="list-group">
+    <% school.students.each do |t| %>
+      <li class="list-group-item"><%= "#{t.first_name} #{t.last_name}"%></li>
+    <% end %>
+  </ul>
 </p>
