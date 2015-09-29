@@ -4,4 +4,8 @@ class HomepageController < ApplicationController
     render template: 'homepage/index.html.erb'
   end
 
+  def show
+    render template: 'homepage/show.html.erb'
+  end
+
 end

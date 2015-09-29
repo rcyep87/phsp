@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :students
   resources :courses
 
+  get  '/homepage/about', to: 'homepage#show'
+
   root 'homepage#index'
 
 end
