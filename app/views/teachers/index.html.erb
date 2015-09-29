@@ -2,6 +2,6 @@
 
 <ul>
 <% teachers.each do |t| %>
-  <li><%= link_to("#{t.first_name} #{t.last_name}") %></li>
+  <li><%= link_to("#{t.first_name} #{t.last_name}", t) %></li>
 <% end %>
 </ul>
