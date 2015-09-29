@@ -1,10 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@import "scaffolds";
+/*@import "scaffolds";
 @import "wits";
 @import "users";
-@import "messages";
+@import "messages";*/
 
 .notice {
  font-weight: bold;
