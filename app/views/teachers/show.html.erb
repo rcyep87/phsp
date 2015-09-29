@@ -1,1 +1,9 @@
 <h1><%= "#{teacher.first_name}'s Page"%></h1>
+
+<p> Students:
+<ul>
+<% teacher.students.each do |s| %>
+  <li><%= "#{s.first_name} #{s.last_name}"%></li>
+<% end %>
+</ul>
+</p>
