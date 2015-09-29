@@ -16,6 +16,10 @@ Rails.application.routes.draw do
     resources :courses
   end
 
+  resources :teachers do
+    resources :students
+  end
+
 root 'teachers#index'
 
 end
