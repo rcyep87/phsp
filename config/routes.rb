@@ -1,24 +1,11 @@
 Rails.application.routes.draw do
+
+  resources :schools
+  resources :teachers
   resources :students
   resources :courses
-  resources :teachers
-  resources :schools
 
-  resources :schools do
-    resources :teachers
-  end
-
-  resources :courses do
-    resources :students
-  end
-
-  resources :teachers do
-    resources :courses
-  end
-
-  resources :teachers do
-    resources :students, only: [:index]
-  end
+get     '/teachers/:id/student', to: 'teachers#show'
 
 root 'teachers#index'
 
