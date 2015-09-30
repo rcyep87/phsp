@@ -1,17 +1,37 @@
 <h1><%= "#{teacher.first_name}'s Page"%></h1>
 
-<ul class="list-group">
-  <p> <strong>Course Name:</strong>
-    <% teacher.courses.each do |c| %>
-      <li class="list-group-item"><%= c.name %></li>
-    <% end %>
-  </p>
-</ul>
+<table class ="table">
+  <caption>Course Name</caption>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name of Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% teacher.courses.each do |c| %>
+      <tr>
+        <th scope="row"><%=c.id%></th>
+          <td><%= c.name %></td>
+        <% end %>
+      </tr>
+    </tbody>
+</table>
 
-<ul class="list-group">
-  <p> <strong>Students:</strong>
-    <% teacher.students.each do |s| %>
-      <li class="list-group-item"><%= "#{s.first_name} #{s.last_name}"%></li>
-    <% end %>
-  </p>
-</ul>
+<table class ="table">
+  <caption>Students</caption>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Students</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% teacher.students.each do |s| %>
+      <tr>
+        <th scope="row"><%=s.id%></th>
+          <td><%= "#{s.first_name} #{s.last_name}"%></td>
+      </tr>
+        <% end %>
+    </tbody>
+</table>

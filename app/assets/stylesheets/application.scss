@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "courses";
+@import "schools";
+@import "students";
+@import "teachers";
+
 .notice {
  font-weight: bold;
  color: green;
